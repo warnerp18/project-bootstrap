@@ -1,0 +1,23 @@
+{
+  "name": "gulp-playground",
+  "version": "1.0.0",
+  "description": "gulp playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.4.0",
+    "browserify": "^14.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^3.1.0",
+    "radius": "git+ssh://git@github.com/FundingCircle/radius.git#5.0.0",
+    "rimraf": "^2.6.1",
+    "uglifyify": "^3.0.4"
+  }
+}
