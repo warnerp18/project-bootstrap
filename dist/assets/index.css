@@ -1,0 +1,2093 @@
+/**
+ * section: current
+ * title: Current
+ *
+ * description:
+ *   This is our current collection of components.
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/**
+ * section: current/colors
+ * title: Colors
+ *
+ * layout: current/variables/colors
+ *
+ * description: |
+ *   A list of the approved colors to be used for Funding Circle projects. We use basic color names as key names (purple, green, blue, etc.) with various shades as array elements.
+ *
+ *   Retrieve the value by using:
+ *   ```
+ *   get-color(purple, light)
+ *   // the 2nd parameter defines the shade of the color - it is an optional parameter, as the default shade is the base shade
+ *   ```
+ *
+ * colors:
+ *   - black:
+ *     - colors__sample--black: get-color(black)
+ *   - blue:
+ *     - colors__sample--blue-lighter: get-color(blue, lighter)
+ *     - colors__sample--blue-light: get-color(blue, light)
+ *     - colors__sample--blue-base: get-color(blue, base)
+ *     - colors__sample--blue-dark: get-color(blue, dark)
+ *     - colors__sample--blue-darker: get-color(blue, darker)
+ *   - green:
+ *     - colors__sample--green-lighter: get-color(green, lighter)
+ *     - colors__sample--green-light: get-color(green, light)
+ *     - colors__sample--green-base: get-color(green, base)
+ *     - colors__sample--green-dark: get-color(green, dark)
+ *     - colors__sample--green-darker: get-color(green, darker)
+ *   - grey cool:
+ *     - colors__sample--grey-cool-light: get-color(grey-cool, light)
+ *     - colors__sample--grey-cool-base: get-color(grey-cool, base)
+ *     - colors__sample--grey-cool-dark: get-color(grey-cool, dark)
+ *     - colors__sample--grey-cool-darker: get-color(grey-cool, darker)
+ *   - grey warm:
+ *     - colors__sample--grey-warm-lighter: get-color(grey-warm, lighter)
+ *     - colors__sample--grey-warm-light: get-color(grey-warm, light)
+ *     - colors__sample--grey-warm-base: get-color(grey-warm, base)
+ *     - colors__sample--grey-warm-dark: get-color(grey-warm, dark)
+ *     - colors__sample--grey-warm-darker: get-color(grey-warm, darker)
+ *     - colors__sample--grey-warm-darkest: get-color(grey-warm, darkest)
+ *   - magenta:
+ *     - colors__sample--magenta-lighter: get-color(magenta, lighter)
+ *     - colors__sample--magenta-light: get-color(magenta, light)
+ *     - colors__sample--magenta-base: get-color(magenta, base)
+ *     - colors__sample--magenta-dark: get-color(magenta, dark)
+ *     - colors__sample--magenta-darker: get-color(magenta, darker)
+ *   - orange red:
+ *     - colors__sample--orange-red-lighter: get-color(orange-red, lighter)
+ *     - colors__sample--orange-red-light: get-color(orange-red, light)
+ *     - colors__sample--orange-red-base: get-color(orange-red, base)
+ *     - colors__sample--orange-red-dark: get-color(orange-red, dark)
+ *     - colors__sample--orange-red-darker: get-color(orange-red, darker)
+ *   - purple:
+ *     - colors__sample--purple-lighter: get-color(purple, lighter)
+ *     - colors__sample--purple-light: get-color(purple, light)
+ *     - colors__sample--purple-base: get-color(purple, base)
+ *     - colors__sample--purple-dark: get-color(purple, dark)
+ *     - colors__sample--purple-darker: get-color(purple, darker)
+ *   - red:
+ *     - colors__sample--red: get-color(red)
+ *   - turquoise:
+ *     - colors__sample--turquoise-lighter: get-color(turquoise, lighter)
+ *     - colors__sample--turquoise-light: get-color(turquoise, light)
+ *     - colors__sample--turquoise-base: get-color(turquoise, base)
+ *     - colors__sample--turquoise-dark: get-color(turquoise, dark)
+ *     - colors__sample--turquoise-darker: get-color(turquoise, darker)
+ *   - yellow:
+ *     - colors__sample--yellow-lighter: get-color(yellow, lighter)
+ *     - colors__sample--yellow-light: get-color(yellow, light)
+ *     - colors__sample--yellow-base: get-color(yellow, base)
+ *     - colors__sample--yellow-dark: get-color(yellow, dark)
+ *     - colors__sample--yellow-darker: get-color(yellow, darker)
+ *   - white:
+ *     - colors__sample--white: get-color(white)
+ */
+/**
+ * section: current/structure/breakpoints
+ * title: Breakpoints
+ *
+ * description: |
+ *   Use this mixin for dealing with breakpoints / responsive.
+ *   * `mobile-small / mobile-medium / mobile-large`
+ *   * `tablet-small / tablet-medium / tablet-large`
+ *   * `desktop-small / desktop-medium / desktop-large`
+ *
+ * layout: current/dependencies/breakpoints/breakpoints
+ */
+/**
+ * section: current/structure/grid-system
+ * title: Grids / columns
+ *
+ * description: |
+ *   Funding Circle is using the golden ratio grid system. This is different than the usual 12 columns grid system, offering more organic layouts.
+ *
+ *   Keep in mind that in this case the columns have widths depending on the context and not strictly on parent. If, in a standard grid system the sum of the "column-units" has to be a certain number (e.g. `4 + 4 + 8 = 12` columns grid), in a golden ratio grid system the widths vary depending on the siblings, so they don't have to be summed up to reach a certain number (e.g. `1 + 2` is as valid as `1 + 4 + 2 + 3`).
+ *
+ *   The columns "widths" are represented by a parameter that can take values from 1 to 8 (1 is the smallest proportion, 8 is the biggest).
+ */
+/**
+ * section: current/structure/grid-system/utility-classes
+ * title: Utility classes
+ *
+ * description: |
+ *   Just like Bootstrap, you can use utility classes for fast prototyping. They are splitted in 4 categories: `small`, `medium`, `large`, `extra-large` for responsive prototyping. The approach is mobile-first, where the small columns will be applied accross all resolutions unless another class for a bigger breakpoint is applied.
+ *
+ *   The parent of the columns require the `.col-s-wrapper / .col-m-wrapper / .col-l-wrapper / .col-xl-wrapper` class on it (the classes are inclusive, so if you use `.col-s-wrapper` the others are not required).
+ *
+ *   Class structure: `.col-[s/m/l/xl]-[1-8]` (e.g. `.col-m-3` will apply a proportion of 3 on the column from medium screen onwards).
+ *
+ * markup: current/dependencies/grid-system/utility-classes
+ */
+/**
+ * section: current/structure/grid-system/mixin
+ * title: Column generator mixin
+ *
+ * description: |
+ *   For more fine tuned layouts, you can use the mixin and generate more complex layouts between custom breakpoints. This can be used together with `breakpoints()` mixin as it just generates the widths.
+ *
+ *   The mixin has to be applied on the wrapper of the columns. Adding a comma in the list will generate a new row.
+ *
+ *   ```
+ *   .column-mixin-example {
+ *      // columns mixin adds default padding to each column
+ *      @include columns(3 2 1, 4 2, 4 1 2 3);
+ *      // columns-no-padding mixin does not add default padding to each column
+ *      @include columns-no-padding(3 2 1, 4 2, 4 1 2 3);
+ *   }
+ *   ```
+ *
+ * markup: current/dependencies/grid-system/column-mixin
+ */
+/**
+ * section: current/structure/grid-system/golden-paddings
+ * title: Golden ratio margins
+ *
+ * description: |
+ *   Sets the right and left margins for individual elements/sections, based on the ratio of the margin in proportion to the element/section itself
+ *
+ *   Sets golden ratio left/right paddings for elements:
+ *
+ *   ```
+ *   golden-ratio-paddings(5, 3, 2)
+ *   // the first parameter represents the ratio/proportion of the element content
+ *   // 2nd parameter is the left margin
+ *   // 3rd parameter is the right margin
+ *   ```
+ */
+.col-s-wrapper {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+.col-s-wrapper > * {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: table-cell; }
+
+.col-s-1 {
+  width: 1%; }
+
+.col-s-2 {
+  width: 1.618%; }
+
+.col-s-3 {
+  width: 2.61792%; }
+
+.col-s-4 {
+  width: 4.2358%; }
+
+.col-s-5 {
+  width: 6.85353%; }
+
+.col-s-6 {
+  width: 11.08901%; }
+
+.col-s-7 {
+  width: 17.94201%; }
+
+.col-s-8 {
+  width: 29.03017%; }
+
+.col-s-9 {
+  width: 46.97082%; }
+
+.col-s-10 {
+  width: 75.99879%; }
+
+@media only screen and (min-width: 480px) {
+  .col-m-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+  .col-m-wrapper > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: table-cell; }
+  .col-m-1 {
+    width: 1%; }
+  .col-m-2 {
+    width: 1.618%; }
+  .col-m-3 {
+    width: 2.61792%; }
+  .col-m-4 {
+    width: 4.2358%; }
+  .col-m-5 {
+    width: 6.85353%; }
+  .col-m-6 {
+    width: 11.08901%; }
+  .col-m-7 {
+    width: 17.94201%; }
+  .col-m-8 {
+    width: 29.03017%; }
+  .col-m-9 {
+    width: 46.97082%; }
+  .col-m-10 {
+    width: 75.99879%; } }
+
+@media only screen and (min-width: 800px) {
+  .col-l-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+  .col-l-wrapper > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: table-cell; }
+  .col-l-1 {
+    width: 1%; }
+  .col-l-2 {
+    width: 1.618%; }
+  .col-l-3 {
+    width: 2.61792%; }
+  .col-l-4 {
+    width: 4.2358%; }
+  .col-l-5 {
+    width: 6.85353%; }
+  .col-l-6 {
+    width: 11.08901%; }
+  .col-l-7 {
+    width: 17.94201%; }
+  .col-l-8 {
+    width: 29.03017%; }
+  .col-l-9 {
+    width: 46.97082%; }
+  .col-l-10 {
+    width: 75.99879%; } }
+
+@media only screen and (min-width: 1200px) {
+  .col-xl-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+  .col-xl-wrapper > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: table-cell; }
+  .col-xl-1 {
+    width: 1%; }
+  .col-xl-2 {
+    width: 1.618%; }
+  .col-xl-3 {
+    width: 2.61792%; }
+  .col-xl-4 {
+    width: 4.2358%; }
+  .col-xl-5 {
+    width: 6.85353%; }
+  .col-xl-6 {
+    width: 11.08901%; }
+  .col-xl-7 {
+    width: 17.94201%; }
+  .col-xl-8 {
+    width: 29.03017%; }
+  .col-xl-9 {
+    width: 46.97082%; }
+  .col-xl-10 {
+    width: 75.99879%; } }
+
+/**
+ * section: current/functions
+ * title: Functions
+ *
+ * description: Helper functions.
+ */
+/**
+ * section: current/functions/lists
+ * title: Lists
+ *
+ * description: Helper functions for manipulating lists.
+ */
+/**
+ * section: current/functions/lists/first
+ * title: First item
+ *
+ * description: |
+ *   Get the first item from a list
+ *
+ *   ```
+ *   first($list)
+ *   // first(5 1 2 6 10) -> 5
+ *   ```
+ */
+/**
+ * section: current/functions/lists/last
+ * title: Last item
+ *
+ * description: |
+ *   Get the last item from a list
+ *
+ *   ```
+ *   last($list)
+ *   // last(5 1 2 6 10) -> 10
+ *   ```
+ */
+/**
+ * section: current/functions/negative
+ * title: Negative value
+ *
+ * description: |
+ *   Returns the negative of a value
+ *
+ *   ```
+ *   negative($val)
+ *   // negative(10rem) -> -10rem
+ *   // negative(true) -> false
+ *   ```
+ */
+/**
+ * section: current/functions/str-split
+ * title: Split string using a delimiter.
+ *
+ * description: |
+ *   Returns a list of substrings.
+ *
+ *   ```
+ *   str-split($string, $delimiter)
+ *   //str-split('/some-path?query', '?') -> ('/some-path', '?query')
+ *   ```
+ */
+/**
+ * section: current/functions/env-path-helper
+ * title: Asset path
+ *
+ * description: |
+ *   Generates the path to an asset, possibly defering to the Rails asset
+ *   pipeline helpers.
+ *
+ *   $path - path to the file
+ */
+/**
+ * section: current/functions/sqrt
+ * title: Square root of a number
+ *
+ * description: |
+ *   Returns the square root of a number.
+ *
+ *   ```
+ *   sqrt($val)
+ *   // sqrt(30) -> 5.477
+ *   // sqrt(25) -> 5
+ *   ```
+ */
+/**
+ * section: current/functions/pow
+ * title: Power of a number
+ *
+ * description: |
+ *   Rise a number to a certain power.
+ *   For exponents it accepts integers or multiples of .5
+ *
+ *   ```
+ *   pow($number, $exp)
+ *   // pow(5, 2) -> 25
+ *   // pow(3, 2.5) -> 15.58846
+ *   // pow(3, -2) -> 0.11111
+ *   ```
+ */
+/**
+ * section: current/functions/units
+ * title: Units functions
+ *
+ * description: Functions that are built to manipulate units.
+ */
+/**
+ * section: current/functions/units/strip-unit
+ * title: Strip unit
+ *
+ * description: |
+ *   Remove the unit from a number
+ *
+ *   ```
+ *   strip-unit($value)
+ *   // strip-unit(10rem) -> 10
+ *   ```
+ */
+/**
+ * section: current/functions/units/separate-unit
+ * title: Separate unit and values
+ *
+ * description: |
+ *   Input a value and it returns a list with the unitless value and unit
+ *
+ *   ```
+ *   separate-unit($val)
+ *   // separate-unit(10rem) -> (10, rem)
+ *   ```
+ */
+/**
+ * section: current/functions/units/unitless
+ * title: Unitless to pixels
+ *
+ * description: |
+ *   Converts a unitless value to pixels
+ *
+ *   ```
+ *   unitless($val)
+ *   // $item: 10
+ *   // unitless(10) -> 10px
+ *   ```
+ */
+/**
+ * section: current/functions/units/size
+ * title: Size
+ *
+ * description: |
+ *   We use a default base unit. This functions ensures that we always use multiples of that base unit.<br>
+ *   We should always define margins / paddings and all other sizes using this function.
+ *
+ *   ```
+ *   unit($val)
+ *   // $REMsupport: true -> unit(10 auto 3 0) -> 10rem auto 3rem 0
+ *   // $REMsupport: false -> unit(10 auto 3 0) -> 160px auto 30rem 0
+ *   ```
+ */
+/**
+ * section: current/icons
+ * title: Icons
+ * layout: current/icons
+ *
+ * description: Add the class to load the icon.
+ *
+ * icons: 
+ *   - fci-go-to-arrow
+ *   - fci-menu-icon
+ *   - fci-tick
+ *   - fci-user-circled
+ *   - fci-phone-circled
+ *   - fci-attention
+ *   - fci-info-circled
+ *   - fci-close
+ *   - fci-transaction
+ *   - fci-dollar-sign
+ *   - fci-download-circled
+ *   - fci-arrow-full-right
+ *   - fci-search
+ *   - fci-stats
+ *   - fci-pound-sign
+ *   - fci-user
+ *   - fci-pencil
+ *   - fci-go-up-arrow
+ *   - fci-phone
+ */
+@font-face {
+  font-family: "fc-icons";
+  src: url("fonts/current/fc-icons.eot");
+  src: url("fonts/current/fc-icons.eot?#iefix") format("eot"), url("fonts/current/fc-icons.woff") format("woff"), url("fonts/current/fc-icons.ttf") format("truetype"), url("fonts/current/fc-icons.svg#fc-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.fci-icon:before, [class^="fci-"]:before,
+[class*=" fci-"]:before {
+  font-family: "fc-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fci-go-to-arrow:before {
+  content: "\E001"; }
+
+.fci-menu-icon:before {
+  content: "\E002"; }
+
+.fci-tick:before {
+  content: "\E003"; }
+
+.fci-user-circled:before {
+  content: "\E004"; }
+
+.fci-phone-circled:before {
+  content: "\E005"; }
+
+.fci-attention:before {
+  content: "\E006"; }
+
+.fci-info-circled:before {
+  content: "\E007"; }
+
+.fci-close:before {
+  content: "\E008"; }
+
+.fci-transaction:before {
+  content: "\E009"; }
+
+.fci-dollar-sign:before {
+  content: "\E010"; }
+
+.fci-download-circled:before {
+  content: "\E011"; }
+
+.fci-arrow-full-right:before {
+  content: "\E012"; }
+
+.fci-search:before {
+  content: "\E013"; }
+
+.fci-stats:before {
+  content: "\E014"; }
+
+.fci-pound-sign:before {
+  content: "\E015"; }
+
+.fci-user:before {
+  content: "\E016"; }
+
+.fci-pencil:before {
+  content: "\E017"; }
+
+.fci-go-up-arrow:before {
+  content: "\E018"; }
+
+.fci-phone:before {
+  content: "\E019"; }
+
+/* ---------------------------------------------------------------------- *  SOURCE SANS
+\* ---------------------------------------------------------------------- */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/current/fonts/regular/SourceSansPro-Regular.eot");
+  src: url("fonts/current/fonts/regular/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/current/fonts/regular/SourceSansPro-Regular.woff2") format("woff2"), url("fonts/current/fonts/regular/SourceSansPro-Regular.woff") format("woff"), url("fonts/current/fonts/regular/SourceSansPro-Regular.ttf") format("truetype"), url("fonts/current/fonts/regular/SourceSansPro-Regular.svg#source_sans_proregular") format("svg"); }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/current/fonts/light/SourceSansPro-Light.eot");
+  src: url("fonts/current/fonts/light/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/current/fonts/light/SourceSansPro-Light.woff2") format("woff2"), url("fonts/current/fonts/light/SourceSansPro-Light.woff") format("woff"), url("fonts/current/fonts/light/SourceSansPro-Light.ttf") format("truetype"), url("fonts/current/fonts/light/SourceSansPro-Light.svg#source_sans_prolight") format("svg"); }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-style: italic;
+  src: url("fonts/current/fonts/light-italic/SourceSansPro-LightIt.eot");
+  src: url("fonts/current/fonts/light-italic/SourceSansPro-LightIt.eot?#iefix") format("embedded-opentype"), url("fonts/current/fonts/light-italic/SourceSansPro-LightIt.woff2") format("woff2"), url("fonts/current/fonts/light-italic/SourceSansPro-LightIt.woff") format("woff"), url("fonts/current/fonts/light-italic/SourceSansPro-LightIt.ttf") format("truetype"), url("fonts/current/fonts/light-italic/SourceSansPro-LightIt.svg#source_sans_prolight_italic") format("svg"); }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-style: italic;
+  src: url("fonts/current/fonts/italic/SourceSansPro-It.eot");
+  src: url("fonts/current/fonts/italic/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("fonts/current/fonts/italic/SourceSansPro-It.woff2") format("woff2"), url("fonts/current/fonts/italic/SourceSansPro-It.woff") format("woff"), url("fonts/current/fonts/italic/SourceSansPro-It.ttf") format("truetype"), url("fonts/current/fonts/italic/SourceSansPro-It.svg#source_sans_proitalic") format("svg"); }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-style: normal;
+  src: url("fonts/current/fonts/semi-bold/SourceSansPro-Semibold.eot");
+  src: url("fonts/current/fonts/semi-bold/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/current/fonts/semi-bold/SourceSansPro-Semibold.woff2") format("woff2"), url("fonts/current/fonts/semi-bold/SourceSansPro-Semibold.woff") format("woff"), url("fonts/current/fonts/semi-bold/SourceSansPro-Semibold.ttf") format("truetype"), url("fonts/current/fonts/semi-bold/SourceSansPro-Semibold.svg#source_sans_prosemibold") format("svg"); }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-style: italic;
+  src: url("fonts/current/fonts/semi-bold-italic/SourceSansPro-SemiboldIt.eot");
+  src: url("fonts/current/fonts/semi-bold-italic/SourceSansPro-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("fonts/current/fonts/semi-bold-italic/SourceSansPro-SemiboldIt.woff2") format("woff2"), url("fonts/current/fonts/semi-bold-italic/SourceSansPro-SemiboldIt.woff") format("woff"), url("fonts/current/fonts/semi-bold-italic/SourceSansPro-SemiboldIt.ttf") format("truetype"), url("fonts/current/fonts/semi-bold-italic/SourceSansPro-SemiboldIt.svg#source_sans_proSBdIt") format("svg"); }
+
+/**
+ * section: current/mixins
+ * title: Mixins
+ *
+ * description: Useful mixins to use
+ */
+/**
+ * section: current/mixins/animation
+ * title: Animation
+ *
+ * description: Mixins for dealing with CSS animations, that fix the issues with vendor prefixes.
+ */
+/**
+ * section: current/mixins/animation/keyframes
+ * title: Keyframes
+ *
+ * description: |
+ *   Mixin for defining keyframes, without worrying about the vendor prefixes issues.<br>
+ *   Should be used alongside the `animation` mixin.
+ *
+ *   E.g. of usage:
+ *   ```
+ *   @include keyframes(slide-down) {
+ *     0% { opacity: 1; }
+ *     90% { opacity: 0; }
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/animation/animation
+ * title: Animation
+ *
+ * description: |
+ *   Call animations defined by the `keyframes` mixin.
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .element {
+ *     @include animation('slide-down 5s 3');
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/breakpoints
+ * title: Breakpoints
+ *
+ * description: Helpers mixins for dealing with responsive and breakpoints
+ */
+/**
+ * section: current/mixins/breakpoints/showbetween
+ * title: Show between X and Z
+ *
+ * description: |
+ *   Mixin for showing content between two breakpoints. If one is set to false, it will be ignored.
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *     @include show-between(mobile-large, tablet-large, block);
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/breakpoints/hidebetween
+ * title: Hide between X and Z
+ *
+ * description: |
+ *   Mixin for hiding content between two breakpoints. If one is set to false, it will be ignored.
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *    @include hide-between(mobile-small, tablet-large);
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/position
+ * title: Positioning
+ *
+ * description: Mixins to use for positioning elements in page
+ */
+/**
+ * section: current/mixins/position/center-block
+ * title: Center block
+ *
+ * description: |
+ *   Center block elements using `margin: auto`
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *    @include center-block($top: false, $bottom: false)
+ *    // if $top / $bottom are false, they will be ignored
+ *    // you can set both top and bottom, or just one of them
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/position/pos
+ * title: Position
+ *
+ * description: |
+ *   Use this as a shorthand for different positionings
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *    @include pos(top, right, bottom, left, position, z-index)
+ *    // all parameters are optional
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/position/posabs
+ * title: Position absolute
+ *
+ * description: |
+ *   Use this as a shorthand for position absolute
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *    @include pos-abs(top, right, bottom, left, z-index)
+ *    // all parameters are optional
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/position/center-abs
+ * title: Center with position absolute
+ *
+ * description: |
+ *   This will center an element in the center of the relative parent, using position absolute. Requires the element to have `width` and `height` defined.
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *      @include center-abs($z-index: 3)
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/conditionals
+ * title: Browser conditionals
+ *
+ * description: |
+ *   Use these mixins to generate CSS either only for IE, or for everything else and not IE.<br>
+ *   It requires the `body` to have a class called `ie-<IE VERSION>`, where `<IE VERSION>` is `8` or `9`.
+ */
+/**
+ * section: current/mixins/conditionals/forie
+ * title: Target only IE
+ *
+ * description: |
+ *   Use this mixin to condition content only for IE.
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *     @include for-ie(8) {
+ *       // style only for IE8
+ *       display: table;
+ *     }
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/conditionals/notie
+ * title: Target everything else, except IE
+ *
+ * description: |
+ *   Use this mixin to condition content for modern browsers, except IE (8 or 9).
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .test {
+ *    @include not-ie(8) {
+ *      // style for modern browsers, except IE8
+ *      display: flex;
+ *    }
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/utilities
+ * title: Utilities
+ *
+ * description: Miscellaneous utility mixins.
+ */
+/**
+ * section: current/mixins/utilities/box-sizing
+ * title: Box sizing
+ * description: this should always be border box
+ */
+/**
+ * section: current/mixins/utilities/opacity
+ * title: Opacity
+ * description: sets the opacity in a cross browser compatible way.
+ */
+/**
+ * section: current/mixins/utilities/gradient
+ * title: Gradient
+ * description: |
+ *   @include gradient($orientation,($color-list),[$angle]);
+ *   $orientation: string -> horizontal / vertical / radial / angle
+ *   $color-list: a list of pairs for color stops (color percentage)
+ *              e.g (rgb(0,0,0) 0%, rgb(255,255,255) 15%, rgb(0,0,0) 100%)
+ *   $angle: if $orientation: angle, then here you set the angle degree
+ *            e.g. @include gradient(angle,(...),50deg);
+ */
+/**
+ * section: current/mixins/utilities/prefix
+ * title: Prefix
+ * description: Generate a declaration with vendor prefixes.
+ */
+/**
+ * section: current/mixins/utilities/list-unstyled
+ * title: Unstyled lists
+ *
+ * description: |
+ *   Remove the default list style and reset its margin and padding
+ *
+ *   E.g. of usage:
+ *   ```
+ *   ul {
+ *     @include list-unstyled;
+ *   }
+ *   ```
+ */
+/**
+ * section: current/mixins/utilities/transition
+ * title: Transition
+ * description: |
+ *   $property: all / background / color / height / width / outline
+ *   $duration: any number
+ *   $unit: ms / s
+ *   $function: ease / linear / ease-in / ease-out / ease-in-out
+ */
+/**
+ * section: current/mixins/utilities/triangle
+ * title: Triangle generator
+ * description: |
+ *   $size: (width,height) - if height is not specified, height = width
+ *   $direction: up / down / right / left /
+ *               up left / up right
+ *               down left / down right
+ */
+/**
+ * section: current/typography
+ * title: Typography
+ *
+ * description: Using the right font family is important when building a brand. Also, setting the correct `font-size` and `line-height`.
+ */
+/*
+function that calculates the corresponding line heights relative to the font sizes calculated with get-font-sizes() function
+it returns a list with the line heights
+the line height is the first multiple of baseline after the font size
+*/
+/**
+ * section: current/typography/font
+ * title: Fonts
+ *
+ * description: |
+ *   Funding Circle uses a font scaling method called the ditonic golden ratio.<br>
+ *   In order to make sure you are using the correct font size, you can send a note (parameter) to a mixin called `font()`
+ *
+ *   The `font()` mixin also will automatically adjust the `line-height` to the correct value (the `line-height` is the first multiple of the get-const(config, baseline)).
+ *
+ *   If you want to disable the `line-height`, set the 2nd parameter to `false`.
+ *
+ *   Options for font size (t-shirt sizing):
+ *   `x-small, small, medium, large, x-large, 2x-large, 3x-large, 4x-large, 5x-large`
+ *
+ *   E.g. of usage:
+ *   ```
+ *   .example-element {
+ *     @include font(x-large, [$line-height: true/false]);
+ *   }
+ *   ```
+ *
+ * modifiers:
+ *   font-size-x-small: '@include font(x-small);'
+ *   font-size-small: '@include font(small);'
+ *   font-size-medium: '@include font(medium);'
+ *   font-size-large: '@include font(large);'
+ *   font-size-x-large: '@include font(x-large);'
+ *   font-size-2x-large: '@include font(2x-large);'
+ *   font-size-3x-large: '@include font(3x-large);'
+ *   font-size-4x-large: '@include font(4x-large);'
+ *   font-size-5x-large: '@include font(5x-large);'
+ *
+ * markup: current/typography/mixins/font
+ */
+.upper-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1em;
+  font-weight: 600; }
+
+/**
+ * section: current/structure
+ * title: Structure
+ *
+ * description: Everything related to the page structure.
+ */
+/**
+ * section: current/structure/mixins
+ * title: Structure mixins
+ */
+/* ---------------------------------------------------------------------- *  COLORS FOR SELECTED TEXT
+\* ---------------------------------------------------------------------- */
+/**
+ * section: current/structure/mixins/wrap
+ * title: Wrap
+ * description: |
+ *   Adjust the left and right padding of selected element
+ *
+ *   $padding: false / true / number
+ *     a) FALSE - default value
+ *     b) TRUE - default padding applied
+ *     c) NUMBER - enter a numeric value to be received in REMs, e.g. entering "1" would pass that value as size(1)
+ *
+ *   $breakpoints: two values that determine when the padding is applied
+ */
+.u-wrap, .u-wrap--nopad {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px; }
+
+/**
+ * section: current/structure/mixins/group-elements
+ * title: Element groups
+ * description: |
+ *   $item is an arglist which takes lists with the following params:
+ *     - min breakpoint - integer or false
+ *     - max breakpoint - integer or false
+ *     - number of columns - integer
+ *     - center last - bolean (use with care, it generates a lot of CSS)
+
+ *   e.g:
+ *   layout with:
+ *     - 1 column between a and b
+ *     - 2 columns between b and c
+ *     - 3 columns between c and d and last one centered
+
+ *   @include group-elements(a b 1 false, b c 2 false, 3 c d true);
+ */
+.u-clear-float {
+  clear: both; }
+
+.u-clearfix:after {
+  display: table;
+  width: 100%;
+  clear: both;
+  content: ''; }
+
+html,
+body {
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: baseline; }
+
+::-moz-selection {
+  background: #ab3383;
+  color: white; }
+
+::selection {
+  background: #ab3383;
+  color: white; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fafafa; }
+
+a {
+  transition: all 200ms ease;
+  color: #097fc9;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+p {
+  margin: 0 0 1em; }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+:last-child {
+  margin-bottom: 0; }
+
+/**
+ * section: current/utility-classes
+ * title: Utility classes
+ *
+ * description: Use these helpful utility classes to add certain behaviors and styling to your elements. To use, add the class(es) directly to your HTML.
+ */
+/**
+ * section: current/utility-classes/floats
+ * title: Floats
+ *
+ * description: |
+ *   You can float an element left or right. Use the class `u-clear-float` to clear floats on elements and `u-clearfix` to clear an element's child elements.
+ *
+ * modifiers:
+ *   u-float-left: Float left
+ *   u-float-right: Float right
+ *
+ * markup: current/utility-classes/floats
+ */
+.u-float-left {
+  float: left; }
+
+.u-float-right {
+  float: right; }
+
+/**
+ * section: current/utility-classes/alignment
+ * title: Alignment
+ *
+ * description: Change the text alignment of an element to center or center an element by using the class `u-center`.
+ *
+ * modifiers:
+ *   u-center-text: Center aligned
+ *
+ * markup: current/utility-classes/alignment
+ */
+.u-center {
+  margin-right: auto;
+  margin-left: auto; }
+
+.u-center-text {
+  text-align: center; }
+
+/**
+ * section: current/utility-classes/layout
+ * title: Layout
+ *
+ * description: |
+ *   Change the layout of an element either by display or position.
+ *   Use the class `u-full-width` for a block display at a width of 100%.
+ *   Use the classes `u-block` for a block display and `u-inline-block` for an inline-block display.
+ *   Use the classes `u-relative` for a relative position and `u-absolute` for an absolute position.
+ *
+ *   ```
+ *   <img class="u-full-width">
+ *   <div class="u-full-width">...</div>
+ *   ```
+ *
+ *   ```
+ *   <img class="u-block">
+ *   ```
+ *
+ *   ```
+ *   <div class="u-inline-block">...</div>
+ *   ```
+ *
+ *   ```
+ *   <div class="u-relative">
+ *     <div class="u-absolute">...</div>
+ *   </div>
+ *   ```
+ */
+.u-block {
+  display: block; }
+
+.u-inline-block {
+  display: inline-block; }
+
+.u-relative {
+  position: relative; }
+
+.u-absolute {
+  position: absolute; }
+
+/**
+ * section: current/utility-classes/images
+ * title: Images
+ *
+ * description: Style your image to be round.
+ *
+ * modifiers:
+ *   u-img-round: Round image
+ *
+ * markup: current/utility-classes/images
+ */
+.u-img-round {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%; }
+
+/**
+ * section: current/utility-classes/fonts
+ * title: Font properties
+ *
+ * description: Update the properties of fonts.
+ *
+ * modifiers:
+ *   u-font-regular: Regular font weight
+ *   u-font-bold: Bold font weight
+ *   u-font-light: Light font weight
+ *
+ * markup: current/utility-classes/fonts
+ */
+.u-font-regular {
+  font-weight: 400; }
+
+.u-font-bold {
+  font-weight: 600; }
+
+.u-font-light {
+  font-weight: 300; }
+
+/**
+ * section: current/utility-classes/backgrounds
+ * title: Background colors
+ *
+ * description: Change the background of an element by assigning the following classes.
+ *
+ * modifiers:
+ *   u-background-1: get-color(grey-warm)
+ *   u-background-2: get-color(yellow)
+ *   u-background-3: get-color(blue, lighter)
+ *   u-background-4: get-color(white)
+ *   u-background-5: get-color(grey-warm, darkest)
+ *   u-background-6: get-color(magenta)
+ *   u-background-7: get-color(grey-warm, light)
+ *   u-background-8: get-color(grey-cool, darker)
+ *
+ * markup: current/utility-classes/backgrounds
+ */
+.u-background-1 {
+  background: #e8e8e8; }
+
+.u-background-2 {
+  background: #fbc740; }
+
+.u-background-3 {
+  background: #dbf1ff; }
+
+.u-background-4 {
+  background: white; }
+
+.u-background-5 {
+  background: #838280; }
+
+.u-background-6 {
+  background: #952d72; }
+
+.u-background-7 {
+  background: #f6f5f3; }
+
+.u-background-8 {
+  background: #383838; }
+
+/**
+ * section: current/utility-classes/wrapper
+ * title: Wrapper
+ *
+ * description: Add a left and right padding to an element, or remove the padding.
+ *
+ * modifiers:
+ *   u-wrap: Add the default padding
+ *   u-wrap--nopad: Apply zero padding
+ *
+ * markup: current/utility-classes/wrapper
+ */
+.u-wrap {
+  padding-right: 16px;
+  padding-left: 16px; }
+
+/**
+ * section: current/utility-classes/titles
+ * title: Titles
+ *
+ * description: Adds default styling to label-style titles that precede main title
+ *
+ * modifiers:
+ *   u-title-label: Add the default styling for title type
+ *
+ * markup: current/utility-classes/titles
+ */
+.u-title-label {
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/**
+ * section: current/utility-classes/visually-hidden
+ * title: Hide content for accessibility
+ *
+ * description: Hides the content while keeping it focusable and available to screen readers. See https://snook.ca/archives/html_and_css/hiding-content-for-accessibility and HTML5 Boilerplate for details
+ *
+ * modifiers:
+ *   u-visually-hidden: Visually hide this block
+ *
+ * markup: current/utility-classes/visually-hidden
+ */
+.u-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0; }
+
+/**
+ * section: current/utility-classes/currency-label
+ * title: Currency label
+ *
+ * description: Prepends the value with a currency sign defined as a data attribute
+ *
+ * modifiers:
+ *   u-currency-label: Visually hide this block
+ *
+ * markup: current/utility-classes/currency-label
+ */
+.u-currency-label:before {
+  content: attr(data-currency); }
+
+/**
+ * section: current/components
+ * title: Components
+ *
+ * description:
+ *   This is a collection of ready-made and reusable components.
+ *   Some of the following components require a specific HTML structure, while others simply require the corresponding class names.
+ */
+/**
+ * section: current/components/accordion
+ * title: Accordion
+ *
+ * activateComponent: radius-component-accordion
+ *
+ * description: |
+ *   Accordion was intented to be used in the style of presenting information under titles in a dynamic and elegant way. Some examples of using the accordion would be in an FAQ section and a Q and A section.
+ *
+ *   ### Environment specific behaviour:
+ *   When JavaScript is not available the hidden content in the accordion will become visible.
+ *
+ * markup: current/components/accordion/accordion
+ */
+/**
+ * section: current/components/buttons
+ * title: Buttons
+ *
+ * activateComponent: radius-component-buttons
+ *
+ * description: |
+ *   To create a button, simply add the <code>.btn</code> class to a <code>button</code>, <code>a</code>, or <code>input</code> element.<br>
+ *   Each button should have the <code>.btn</code> class to start with, followed by the available button classes to create the desired button styling (e.g. size, importance).
+ *
+ * usage:
+ *   btn: Basic usage
+ *
+ * layout: current/components/buttons/buttons
+ */
+/**
+ * section: current/components/buttons/sizes
+ * title: Sizes
+ *
+ * description: |
+ *   By default the buttons have a predefined size. If you want to create a different sized button, you can use one of the classes listed below:
+ *
+ * sizes:
+ *   btn--small: Small button
+ *   btn--large: Large button
+ *
+ * layout: current/components/buttons/buttons
+ */
+/**
+ * section: current/components/buttons/importance
+ * title: Importance
+ *
+ * description: |
+ *   Certain buttons could be more important than others. There should be a clear separation in terms of the visual order of importance of the buttons on a page.
+ *
+ * importance:
+ *   btn--primary: Primary button. The most visible button when it comes to importance.
+ *   btn--secondary: This should be used in conjunction with a primary button. It means that the button is still visible to users, but less important than the primary button.
+ *   btn--secondary-alt: Same meaning as .btn-secondary. This should be used on dark backgrounds.
+ *   btn--link: Least important type of button. Should be used in cases where the users are not encouraged to click it (e.g. "Erase your data"). Visually, it is similar to a regular link but it can inherit all other properties of a button (size, icons, disabled, etc.).
+ *
+ * layout: current/components/buttons/buttons
+ */
+/**
+ * section: current/components/buttons/variations
+ * title: Variations
+ *
+ * description: |
+ *   Button variation go here.
+ *
+ * variations:
+ *   btn--full: This makes the button fill 100% of the available width.
+ *   btn--no-margin: By default buttons have a margin bottom set to them. This cancels that margin.
+ *   is-loading: This is a state class that can be applied while an action is performed in the background (e.g. SPAs - saving / importing data).
+ *   fci-[icon]: This adds an icon to the left of the button. [icon] is a placeholder for the icon name. A list of all the available icons can be found on the Variables page.
+ *   btn--disabled: For disabled buttons, apply this class or simply add the `disabled` attribute.
+ *
+ * layout: current/components/buttons/buttons
+ */
+/**
+ * section: current/components/form
+ * title: Form elements
+ *
+ * description: Use the following input elements to build your form. Add a class of `u-background-1` to the wrapper for extra contrast.
+ */
+/**
+ * section: current/components/form/dynamic-number-input
+ * title: Dynamic Number Input Field
+ *
+ * activateComponent: radius-component-dynamic-number-input
+ *
+ * description: |
+ *   Resizes with input length and allows for min as well as max value settings.
+ *   An error message will appear if the criteria are not met.
+ *   Only whole numbers are supported.
+ *
+ * markup: current/components/form/dynamic-number-input/dynamic-number-input
+ */
+/**
+ * section: current/components/form/input
+ * title: Input elements
+ *
+ * activateComponent: radius-component-component-input
+ *
+ * modifiers:
+ *   is-valid: Add this class if the input is valid. The class should be applied on the `input` element
+ *   is-error: Add this class if the input has an error. The class should be applied on the `input` element
+ *
+ * markup: current/components/form/input/input
+ */
+/**
+ * section: current/components/form/checkbox
+ * title: Checkboxes
+ *
+ * activateComponent: radius-component-form-checkbox
+ *
+ * description: |
+ *   Use checkboxes for selecting one or more options from a list.
+ *
+ * modifiers:
+ *   form-checkbox--left: align to the left of label
+ *   form-checkbox--right: align to the right of label
+ *   form-checkbox--bottom: align to the bottom of label
+ *   form-checkbox--top: align to the top of label
+ *
+ * markup: current/components/form/checkbox/checkbox
+ */
+/**
+ * section: current/components/form/radio
+ * title: Radio buttons
+ *
+ * activateComponent: radius-component-form-radio
+ *
+ * description: |
+ *   Use radio buttons for selecting one option out of a list of options.
+ *
+ * modifiers:
+ *   form-radio--left: align to the left of label
+ *   form-radio--right: align to the right of label
+ *   form-radio--bottom: align to the bottom of label
+ *   form-radio--top: align to the top of label
+ *
+ * markup: current/components/form/radio/radio
+ */
+::-webkit-input-placeholder {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  font-style: italic;
+  color: #383838; }
+
+:-ms-input-placeholder {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  font-style: italic;
+  color: #383838; }
+
+::-moz-placeholder {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  font-style: italic;
+  color: #383838; }
+
+:-moz-placeholder {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  font-style: italic;
+  color: #383838; }
+
+/**
+ * section: current/components/form/select
+ * title: Select element
+ *
+ * activateComponent: form-element-select
+ *
+ * modifiers:
+ *   is-valid: add this class if the input is valid. The class should be applied on the `.form-element-select` element
+ *   is-error: add this class if the input has an error. The class should be applied on the `.form-element-select` element
+ *
+ * markup: current/components/form/select/select
+ */
+/**
+ * section: current/components/form/textarea
+ * title: Textarea element
+ *
+ * activateComponent: radius-component-textarea
+ *
+ * modifiers:
+ *   is-valid: add this class if the input is valid. The class should be applied on the `textarea` element
+ *   is-error: add this class if the input has an error. The class should be applied on the `textarea` element
+ *
+ * markup: current/components/form/textarea/textarea
+ */
+/**
+ * section: current/components/form/error-message
+ * title: Error messages
+ *
+ * activateComponent: radius-component-error-message
+ *
+ * description: |
+ *   Use the error-message component to display validation errors.
+ *   The error message will be visible when the field is invalid and is not focused.
+ *   If you'd like to show the error message only when the field has been 'touched'
+ *   at least once, use the enable-required-fields JS module and mark required fields
+ *   with the data-required attribute.
+ *
+ * markup: current/components/form/error-message/error-message
+ */
+/**
+ * section: current/components/gotolink
+ * title: Go-to-link arrows
+ *
+ * activateComponent: radius-component-go-to-link
+ *
+ * description: |
+ *   The arrows are used to link to a desired section with a smooth scroll.
+ *   The element should be an anchor `<a>` with the `href` linked to the section where you need to scroll to.<br><br>
+ *   The arrow positions itself at the top of a section using `position: absolute` so make sure the container has a `position: relative`.
+ *   Also, the background color is inherited from the parent, so make sure the parent has a defined color.
+ *
+ * markup: current/components/go-to-link/go-to-link
+ */
+/**
+ * section: current/components/hero
+ * title: Hero
+ *
+ * activateComponent: radius-component-hero
+ *
+ * description: |
+ *   A hero is a section that sets the mood for the page, offering the most important data relevant to that page. The component by default offers only a skeleton, setting the right font size for title, content and the correct top and/or bottom minimum paddings.
+ *   The component should be customised by adding a modifier class on the same level as `hero`. E.g. `<section class="hero hero--homepage">[...]</section>` and use that modifier class to add background images and various spacing.
+ *
+ *   ### Limitations:
+ *   This component must be used only once per page, at the top (below the header but before any other content).
+ *   This section spans from one edge of the browser to the other. Should not be contained inside any sort of wrapper that limits the max-width so that the background is not limited to that. The content (copy) is contained within the default wrapper (`.u-wrap`)
+ *
+ * markup: current/components/hero/hero
+ */
+/**
+ * section: current/components/message
+ * title: Message
+ *
+ * activateComponent: radius-component-message
+ *
+ * description: |
+ *   Message box for various type of messages.
+ *
+ *   The component requires the `.message` class for the default info message. For other types of messages (error, warnings, success) you can add one of the classes listed below.
+ *
+ * modifiers:
+ *   message--info: info messages
+ *   message--error: error messages
+ *   message--warning: warning message
+ *   message--success: success message
+ *
+ * markup: current/components/message/message
+ */
+/**
+ * section: current/components/notification
+ * title: Notification
+ *
+ * activateComponent: radius-component-notification
+ *
+ * description: |
+ *   Notification for short, snappy feedback for the user. For more elaborate messages (with title), see the messages component.
+ *
+ *   The component requires the `.notification` class for the default info notification. For other types of notifications (error, warnings, success) you can add one of the classes listed below.
+ *
+ * modifiers:
+ *   notification--error: error notifications
+ *   notification--warning: warning notification
+ *   notification--success: success notification
+ *
+ * markup: current/components/notification/notification
+ */
+/*
+ * section: current/components/pull-content
+ * title: Pull-Content
+ *
+ * activateComponent: radius-component-pull-content
+ *
+ * description: |
+ *   This component allows for a content box that toggles between full width and float depending on screen-size.<br><br>
+ *
+ *   It consists of three basic elements:<br>
+ *   pull-content-wrap<br>
+ *   pull-content<br>
+ *   main-content (optional)<br><br>
+ *
+ *   The main content can be further customised by adding more classes or replacing the `.main-content` class altogether as it isn't used by Radius.<br><br>
+ *
+ *   The breakpoint is `tablet-medium`
+ *
+ *
+ * modifiers:
+ *   pull-content--sm: Add this modifier to the pull-content-wrap element to create a small pull-content container (Golden Ratio => 7 5)
+ *   pull-content--m: Add this modifier to the pull-content-wrap element to create a medium pull-content container (Golden Ratio => 7 6)
+ *
+ * markup: current/components/pull-content/pull-content
+ */
+/*
+ * section: current/components/review-details
+ * title: Review Details
+ *
+ * activateComponent: radius-component-review-details
+ *
+ * description: |
+ *   This component displays information back to the user either for being copied (bank transfer details) or for reviewing ("Here are your details, please review").
+ *
+ *   This component should be used inside a larger component that has a background that is not white. Ideally, the context should have a light grey background.
+ *
+ * markup: current/components/review-details/review-details
+ */
+/**
+ * section: current/components/sidenav
+ * title: Sidenav
+ *
+ * activateComponent: radius-component-sidenav
+ *
+ * description: |
+ *   Has class `side-nav--no-sticky` which can be used to remove the default `position: fixed`.
+ *   Mobile version is hidden with JS disabled as funcitonality is useless
+ *   First link should always have `is-active` class by default
+ *
+ * markup: current/components/sidenav/sidenav
+ */
+/**
+ * section: current/components/step-card
+ * title: Step card
+ *
+ * activateComponent: radius-component-step-card
+ *
+ * description: |
+ *   The step card is a pattern built for forms with multiple logical parts but
+ *   also has a static modifier to be used without its javascript counterpart.
+ *
+ *   <br>
+ *   The main components are:
+ *   - `step-card__wrap`: This wrapper is needed if there are multiple cards in a
+ *   series. This is not needed for `step-card--static`.
+ *   - `step-card`: The main element. This can have the modifiers such as
+ *   `--narrow` and `--static`.
+ *   - `step-card__content`: The meat of the content. Contains the `__title`,
+ *   `__steps`, `__def-list`, `__intro` and general content.
+ *   - `step-card__buttons`: The action buttons to continue through steps
+ *
+ *   <br>
+ *   If the content is narrower than full width, such as for a nested form, you
+ *   you can apply the `step-card--narrow` modifier.
+ *   <br>
+ *   For the static card you can use `step-card--static`.
+ *   <br>
+ *   There is a `step-card--warning` class to apply a yellow `border-left`. This
+ *   can be used to draw attention to a specific card. For example, in transfer
+ *   ins we use it to emphasise the 'Check details' step.
+ *   ```
+ *   <div class="sg-step-card-wrap step-card__wrap" data-step-wrap data-step-text="Step ${step} of ${total}">
+ *     <section class="step-card" data-step>
+ *       <div class="step-card__content">
+ *         <span class="step-card__steps" data-step-count></span>
+ *         <h2 class="step-card__title">Check your personal details</h2>
+ *
+ *         <dl class="step-card__def-list">
+ *           <dt>Name</dt>
+ *           <dd>Craig David</dd>
+ *         </dl>
+ *       </div>
+ *
+ *       <div class="step-card__buttons">
+ *         <a href="javascript://void(0)" class="btn--secondary btn--small btn--full">Edit my details</a>
+ *         <a href="javascript://void(0)" class="btn--primary btn--small btn--full" data-step-advance>These are correct</a>
+ *       </div>
+ *     </section>
+ *   </div>
+ *   ```
+ *
+ * layout: current/components/step-card/step-card
+ */
+/**
+ * section: current/components/table
+ * title: Table
+ *
+ * activateComponent: radius-component-table
+ *
+ * description: |
+ *   It is very important to make sure all classes and `[data]` attributes are set just like in the example.
+ *
+ *   There are two variations of responsive tables available, depending on the behaviour on small screens:
+ *     - vertical - on small screens, the columns are transformed into cards
+ *     - horizontal - on small screens, the rows are transformed into cards with the first `<td>` (that must contain `data-td-title`) as the title of the card
+ *
+ *   The table implementation is using `data-td-label` as the title of the card and `data-table-hide` for elements that will be hidden on small screens.
+ *
+ *   The implementation is not dependent on the `table` tag, but should be kept like that for semantic reasons. Also, the `<div class="table"/>` wrapper is required.
+ *
+ */
+/**
+ * section: current/components/table/table-vertical
+ * title: Table - column to card
+ *
+ * description: |
+ *   This implementation splits the table on cards based on the columns of the table. The title of each card will remain the `<th>`.
+ *
+ *   `data-td-label` should be set to be the same as the content of the first column to ensure that the title of the card and rows are the same across all screen widths.
+ *
+ *   On small screens we want to hide the column header, so we need to add `data-table-hide` on the first `<td>` or `<th>` from each `<tr>`.
+ *
+ * markup: current/components/table/table-vertical
+ */
+/**
+ * section: current/components/table/table-horizontal
+ * title: Table - row to card
+ *
+ * description: |
+ *   Example of table usage
+ *
+ *   This implementation splits the table on cards based on the rows of the table. The title of each card should be the content of the first `<td data-td-title>`.
+ *
+ *   `data-td-label` should be set to be the same as the corresponding `<th>` to ensure that the title of the card and rows are the same across all screen widths.
+ *
+ *   On small screens we want to hide the `<thead>` because the information there will be repeated on the cards, so we need to add `data-table-hide` on it.
+ *
+ * modifiers:
+ *   table--inline: on small screens the cards are in a row (similar to vertical table)
+ *   table--label-row: on small screens the label and content fill one `<tr>`
+ *   table--label-inline: on small screens we try to fit as many label / content pairs as possible
+ *
+ * markup: current/components/table/table-horizontal
+ */
+/**
+ * section: current/components/tabs
+ * title: Tabs component
+ *
+ * activateComponent: radius-component-tabs
+ *
+ * description: |
+ *   On mobile, or when the JavaScript is not present, the tab component 'unrolls' and is presented as a list of sections, rather than tabs.
+ *
+ * markup: current/components/tabs/tabs
+ */
+/**
+ * section: current/components/carousel
+ * title: Carousel
+ *
+ * activateComponent: radius-component-carousel
+ *
+ * description: |
+ *   Carousel should be used as a more iconic (as in distinctive visual signature) alternative to a list of elements. This component lends itself to situations where a list of comparable options is presented, like a list of loan terms. To help illustrate the number of options this component should be used along with the indicator component.
+ *
+ *   ### Environment specific behaviour:
+ *   On devices with coarse pointer accuracy, swipe gesture can be used to go to the next or previous carousel item.
+ *   When JavaScript or flexbox are not available, this components renders as a list of elements which wraps.
+ *
+ *   ### Limitations:
+ *   This component is best used with a limited amount of items (3-10) to both make use of it's visual appeal (less than 3 items) and avoid information overload (more than 10 items).
+ *   Additionally, the component should not be placed in the vicinity of other components making use of perspective.
+ *
+ * markup: current/components/carousel/carousel
+ */
+/**
+ * section: current/components/term-card
+ * title: Term card
+ *
+ * activateComponent: radius-component-term-card
+ *
+ * description: |
+ *   Term card is a more attractive version of a radio button used to present a term and an amount
+ *
+ * markup: current/components/term-card/term-card
+ */
+/**
+ * section: current/components/indicator
+ * title: Position indicator
+ *
+ * activateComponent: radius-component-indicator
+ *
+ * description: |
+ *   The indicator is used to show number of associated elements along with the position of the active element. Additionally, it could be used to control the associated element, i.e. jump to element 3 out of 5.
+ *
+ *   **Environment specific behaviour:**
+ *   On desktop (device with fine pointer accuracy), this component allows the user to jump to any other associated element.
+ *   Conversely, on device with coarse pointer accuracy, this component allows the use to jump only one step forward, or one step backward with the direction determined by the position of the pointer relative to currently selected dot.
+ *
+ *   **Limitations:**
+ *   This element depends on the availability of flexbox as well as availability of JavaScript. If either of these requirements is not met, the component will be hidden.
+ *
+ * markup: current/components/indicator/indicator
+ */
+@media only screen and (min-width: 320px) {
+  .test {
+    color: #d60036; } }
+
+.asdfasdf {
+  display: block; }
